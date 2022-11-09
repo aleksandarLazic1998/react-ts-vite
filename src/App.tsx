@@ -1,5 +1,8 @@
+import React from 'react'
+import RoutesApp from './layout/Routes'
+
 function App() {
-	return <div></div>;
+    return <RoutesApp />
 }
 
-export default App;
+export default App
