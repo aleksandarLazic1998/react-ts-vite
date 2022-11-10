@@ -1,1 +1,1 @@
-# react-ts-vite
+### Vite TypeScript React Template
