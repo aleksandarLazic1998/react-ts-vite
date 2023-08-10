@@ -1,6 +1,6 @@
-name: Continuous Integration and Environment Setup
+name: Manual Continuous Integration and Environment Setup
 
-on: push
+on: workflow_dispatch # Manually trigger the workflow
 
 jobs:
     set_env_and_lint:
@@ -35,4 +35,3 @@ jobs:
               uses: borales/actions-yarn@v4
               with:
                   cmd: test # will run `yarn test` command
-

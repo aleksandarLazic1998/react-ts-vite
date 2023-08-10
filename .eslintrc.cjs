@@ -25,5 +25,7 @@ module.exports = {
         'no-tabs': 'off',
         '@typescript-eslint/comma-dangle': 'off',
         'no-param-reassign': 'off',
+        'react/function-component-definition': 'off',
+        'arrow-body-style': 'off',
     },
 }
