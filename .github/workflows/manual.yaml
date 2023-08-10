@@ -2,6 +2,10 @@ name: Manual Continuous Integration and Environment Setup
 
 on: workflow_dispatch # Manually trigger the workflow
 
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
 jobs:
     set_env_and_lint:
         name: Set Environment and Lint Code
