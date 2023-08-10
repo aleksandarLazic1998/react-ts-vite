@@ -13,7 +13,7 @@ module.exports = {
     overrides: [],
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaVersion: 2021,
+        ecmaVersion: 'ESNext',
         sourceType: 'module',
         project: './tsconfig.json',
     },
