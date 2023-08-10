@@ -10,7 +10,8 @@
         "test": "vitest",
         "prepare": "husky install",
         "lint": "eslint . --fix --max-warnings=0",
-        "husky": "cross-env CI=true npm run test && npm run lint"
+        "husky": "cross-env CI=true npm run test && npm run lint",
+        "reset": "rm -rf node_modules"
     },
     "dependencies": {
         "axios": "^1.1.3",
