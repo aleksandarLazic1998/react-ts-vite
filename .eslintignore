@@ -1,3 +1,4 @@
 vite.config.ts
 *test.**
 **/httpClient.ts
+dist/**/*
