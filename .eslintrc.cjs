@@ -20,9 +20,9 @@ module.exports = {
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaVersion: 2021,
+        ecmaVersion: 2021, // Adjust as needed
         sourceType: 'module',
-        project: './tsconfig.json',
+        project: ['./tsconfig.json', './tsconfig.assets.json'],
     },
     plugins: ['prettier', 'react', '@typescript-eslint'],
     rules: {
