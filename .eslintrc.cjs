@@ -10,14 +10,7 @@ module.exports = {
         'plugin:react/recommended',
         'prettier',
     ],
-    overrides: [
-        {
-            extends: [
-                'plugin:@typescript-eslint/recommended-requiring-type-checking',
-            ],
-            files: ['./**/*.{ts,tsx}'],
-        },
-    ],
+    overrides: [],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 2021, // Adjust as needed
