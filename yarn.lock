@@ -3469,7 +3469,7 @@ url-parse@^1.5.3:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vite@^3.2.3:
+vite@^3.2.7:
   version "3.2.7"
   resolved "https://registry.yarnpkg.com/vite/-/vite-3.2.7.tgz#35a62826bd4d6b778ae5db8766d023bcd4e7bef3"
   integrity sha512-29pdXjk49xAP0QBr0xXqu2s5jiQIXNvE/xwd0vUizYT2Hzqe4BksNNoWllFVXJf4eLZ+UlVQmXfB4lWrc+t18g==
