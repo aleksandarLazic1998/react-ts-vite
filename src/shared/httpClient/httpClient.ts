@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios, { AxiosError } from 'axios'
 
 const httpClient = axios.create({
     baseURL: process.env.REACT_APP_API_URL,
@@ -12,7 +12,8 @@ httpClient.interceptors.request.use((config) => {
 
 httpClient.interceptors.response.use(
     (response) => response,
-    (error) => {
+    (e) => {
+        const error = e as AxiosError
         if (error.status === 401) window.location.replace('/')
         else throw error
     }

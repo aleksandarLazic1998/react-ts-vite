@@ -10,10 +10,17 @@ module.exports = {
         'plugin:react/recommended',
         'prettier',
     ],
-    overrides: [],
+    overrides: [
+        {
+            extends: [
+                'plugin:@typescript-eslint/recommended-requiring-type-checking',
+            ],
+            files: ['./**/*.{ts,tsx}'],
+        },
+    ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaVersion: 'ESNext',
+        ecmaVersion: 2021,
         sourceType: 'module',
         project: './tsconfig.json',
     },
@@ -27,5 +34,6 @@ module.exports = {
         'no-param-reassign': 'off',
         'react/function-component-definition': 'off',
         'arrow-body-style': 'off',
+        '@typescript-eslint/no-unsafe-assignment': 'off',
     },
 }
