@@ -9,7 +9,9 @@ interface IProps {
 function ErrorPage({ resetErrorBoundary }: IProps) {
     return (
         <div className="error-page">
-            <div className="oops">Oops!</div>
+            <div className="oops" aria-hidden="true">
+                Oops!
+            </div>
             <div className="message">Something went wrong...</div>
             {resetErrorBoundary && (
                 <div>
@@ -17,6 +19,7 @@ function ErrorPage({ resetErrorBoundary }: IProps) {
                         type="button"
                         className="retry-button"
                         onClick={resetErrorBoundary}
+                        aria-label="Retry"
                     >
                         🔄 Try Again!
                     </button>
